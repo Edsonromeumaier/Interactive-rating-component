@@ -1,0 +1,62 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Overpass:wght@500;700&family=Red+Hat+Display&display=swap');
+    *{
+        border: 1px rgb(111, 255, 0) solid;
+        margin: 0;
+        box-sizing: border-box;
+    }  
+  :root {
+        --Orange: hsl(25, 97%, 53%);        
+        --White: hsl(0, 0%, 100%);
+        --LightGrey: hsl(217, 12%, 63%);
+        --MediumGrey: hsl(216, 12%, 54%);
+        --DarkBlue: hsl(213, 19%, 18%);
+        --VeryDarkBlue: hsl(216, 12%, 8%);
+           
+    }
+
+    body {
+      height: 100vh;
+      padding: 0;
+      margin: 0;            
+      background-color: var(--VeryDarkBlue);
+      justify-content: center;
+      align-items: center;
+      font-family: 'Overpass', sans-serif ;
+      
+    }
+
+    
+    .card {
+      justify-content: flex-start;
+      text-align: center;
+      padding: 1.5em;
+      margin: 1.5em;
+      background-color: var(--DarkBlue);
+
+      
+    }
+    .heading {
+      color:var(--White);
+      
+    }
+    span p{
+      color:var(--LightGrey);
+    }
+
+    .seletores {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      margin:1em;
+
+    }
+
+    .card2{
+      justify-content: flex-start;
+      text-align: center;
+      padding: 1.5em;
+      margin: 1.5em;
+      background-color: var(--DarkBlue);
+
+    }

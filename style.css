@@ -2,7 +2,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Overpass:wght@500;700&family=Red+Hat+Display&display=swap');
     *{
         border: 1px rgb(111, 255, 0) solid;
-        margin: 0;
+       
         box-sizing: border-box;
     }  
   :root {
@@ -20,43 +20,60 @@
       padding: 0;
       margin: 0;            
       background-color: var(--VeryDarkBlue);
+      display: flex;
       justify-content: center;
       align-items: center;
-      font-family: 'Overpass', sans-serif ;
-      
+      font-family: 'Overpass', sans-serif ;      
     }
-
     
     .card {
-      justify-content: flex-start;
-      text-align: center;
-      padding: 1.5em;
-      margin: 1.5em;
       background-color: var(--DarkBlue);
-
+      width: 90%;
+      margin: 2em auto;      
       
     }
+      .evaluation{
+        display:block;
+      }
+
     .heading {
       color:var(--White);
-      
+      line-height: 1.7em;
+      font-weight: 700;
     }
-    span p{
+    
+    .paragraph{
       color:var(--LightGrey);
+      line-height: 1.7em;
     }
 
     .seletores {
-      width: 100%;
+      width: 90%;
       display: flex;
       justify-content: space-around;
-      margin:1em;
+      margin: 0 auto;
 
     }
+    .circle{
+      background-color: var(--Orange);
+      border-radius: 0.8em;
+      
+    }
 
-    .card2{
+    .btn{
+      background-color: violet;
+    }
+
+    .thankYou{
       justify-content: flex-start;
       text-align: center;
       padding: 1.5em;
       margin: 1.5em;
       background-color: var(--DarkBlue);
 
+    } 
+    .attribution {
+      @media screen and (max-width: 640px){ {
+        display: none;
+      }
     }

@@ -28,14 +28,22 @@
     
     .card {
       background-color: var(--DarkBlue);
-      width: 90%;
-      margin: 2em auto;      
+      width: 90%;      
+      margin: 3em auto; 
+      padding: 1.5em;   
+      border-radius: 1.5em;
+        
       
     }
       .evaluation{
-        display:block;
-      }
+      margin: 2em 1.5em;
+      border: aquamarine dashed 1px;
 
+      }
+      .circle-star{
+        width: 48px;
+        height: 48px;
+      }
     .heading {
       color:var(--White);
       line-height: 1.7em;

@@ -10,28 +10,30 @@
 
 </head>
 <body>
-    <main>  <!--O elemento main foi colocado segundo as boas práticas-->
+    <main>  <!--O elemento main foi colocado por questão de boas práticas-->
       <div class="card">
         <!--Esse card vai conter os dois estados da api: Evaluation and thank you-->
 
-  <!-- Rating state start -->  
-          <div class="evaluation">
+          <!-- Rating state start -->  
+                  <div class="evaluation">
 
-            <img src="./images/icon-star.svg" class="circle-star" height="36px" width="36px">   
+                    <img src="./images/icon-star.svg" class="circle-star">   
 
-            <h1 class="heading">How did we do?</h1>
-              <span><p class="paragraph">Please let us know how we did with your support request. All feedback is appreciated 
-              to help us improve our offering!</p></span>
-          <div class="seletores">
-            <li><ul><input class="circle" type="radio" id="1" value="1"></ul>
-              <li><ul><input class="circle" type="radio" id="2" value="2"></ul>
-                <li><ul><input class="circle" type="radio" id="3" value="3"></ul>
-                  <li><ul><button class="circle">4</button></ul>
-                    <li><ul><button class="circle">5</button></ul></li>
-          </div>
-          <button class="btn" type="submit" id="btn"> Submit </button>
-      </div> 
-  <!-- Rating state end -->
+                    <h1 class="heading">How did we do?</h1>
+                      <p class="paragraph">Please let us know how we did with your support request. All feedback is appreciated 
+                      to help us improve our offering!</p>
+
+                    <div class="seletores">
+                      <li><ul><input class="circle" type="radio" id="1" value="1"></ul>
+                        <li><ul><input class="circle" type="radio" id="2" value="2"></ul>
+                          <li><ul><input class="circle" type="radio" id="3" value="3"></ul>
+                            <li><ul><button class="circle">4</button></ul>
+                              <li><ul><button class="circle">5</button></ul></li>
+                    </div>
+
+                  <button class="btn" type="submit" id="btn"> Submit </button>
+                </div>     
+          <!-- Rating state end -->
 
   <!-- Thank you state start -->
             <div class="thankYou">
@@ -42,19 +44,22 @@
 
               <h1 class="heading">Thank you! </h1>
 
-              <span><p class="paragraph">We appreciate you taking the time to give a rating. If you ever need more support, 
-              don’t hesitate to get in touch! </p></span>
+              <p class="paragraph">We appreciate you taking the time to give a rating. If you ever need more support, 
+              don’t hesitate to get in touch! </p>
 
             </div>
               <!-- Thank you state end -->
 
+
+  </div>       <!--fim dos cards--> 
+
   
-   
-  
+
       <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
         Coded by <a href="#">Your Name Here</a>.
       </div>
+
 
     </main>    
 </body>

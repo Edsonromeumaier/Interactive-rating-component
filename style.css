@@ -1,9 +1,10 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Overpass:wght@500;700&family=Red+Hat+Display&display=swap');
     *{
-        border: 1px rgb(111, 255, 0) solid;
+        
        
         box-sizing: border-box;
+        
     }  
   :root {
         --Orange: hsl(25, 97%, 53%);        
@@ -21,38 +22,51 @@
       margin: 0;            
       background-color: var(--VeryDarkBlue);
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      font-family: 'Overpass', sans-serif ;      
+      font-family: 'Overpass', sans-serif ; 
+
     }
     
     .card {
       background-color: var(--DarkBlue);
-      width: 90%;      
-      margin: 3em auto; 
+      height: 60%;
+      width: 40%;      
+      margin: 3em auto;      
       padding: 1.5em;   
       border-radius: 1.5em;
+      justify-content: center;
         
       
     }
-      .evaluation{
+    
+    .evaluation{
+
       margin: 2em 1.5em;
-      border: aquamarine dashed 1px;
+      
+      display: block;
 
       }
-      .circle-star{
+
+     .circle-star{
         width: 48px;
         height: 48px;
+        background-color: var(--MediumGrey);
+        border-radius: 50%;
+        padding: 0.5em;
       }
     .heading {
       color:var(--White);
       line-height: 1.7em;
       font-weight: 700;
+      
     }
     
     .paragraph{
       color:var(--LightGrey);
       line-height: 1.7em;
+
     }
 
     .seletores {
@@ -60,19 +74,33 @@
       display: flex;
       justify-content: space-around;
       margin: 0 auto;
+        
 
+    }
+    .option{
+      
+      background-color: var(--MediumGrey);
+      border-radius: 0.8em;
+      padding:1em 2em;      
+      cursor: pointer;
+              
     }
     .circle{
+      display: none;
+    }
+    
+    .btn{
+      text-transform: uppercase;
+      width: 100%;
+      margin: 0.7em auto;
       background-color: var(--Orange);
       border-radius: 0.8em;
-      
-    }
-
-    .btn{
-      background-color: violet;
+      font-size: 15px;
+      color: var(--white);
     }
 
     .thankYou{
+      display: none;
       justify-content: flex-start;
       text-align: center;
       padding: 1.5em;
@@ -81,7 +109,7 @@
 
     } 
     .attribution {
-      @media screen and (max-width: 640px){ {
-        display: none;
-      }
-    }
+      justify-content: flex-end;
+
+    
+  }

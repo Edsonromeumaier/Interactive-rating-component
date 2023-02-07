@@ -3,41 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="script" href="./design/script.js">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./style.css">
+  <script defer src="./design/script.js"></script>
   <title>El Grand Interactive rating component</title>
 
 </head>
 <body>
-    <main>  <!--O elemento main foi colocado por questão de boas práticas-->
+     
       <div class="card">
-        <!--Esse card vai conter os dois estados da api: Evaluation and thank you-->
+        
+              <div class="evaluation">
 
-          <!-- Rating state start -->  
-                  <div class="evaluation">
+                <img src="./images/icon-star.svg" alt="star" class="circle-star">   
 
-                    <img src="./images/icon-star.svg" class="circle-star">   
+                <h1 class="heading">How did we do?</h1>
 
-                    <h1 class="heading">How did we do?</h1>
-                      <p class="paragraph">Please let us know how we did with your support request. All feedback is appreciated 
-                      to help us improve our offering!</p>
+                  <p class="paragraph">Please let us know how we did with your support request. All feedback is appreciated 
+                  to help us improve our offering!</p>
 
-                    <div class="seletores">
-                      <li><ul><input class="circle" type="radio" id="1" value="1"></ul>
-                        <li><ul><input class="circle" type="radio" id="2" value="2"></ul>
-                          <li><ul><input class="circle" type="radio" id="3" value="3"></ul>
-                            <li><ul><button class="circle">4</button></ul>
-                              <li><ul><button class="circle">5</button></ul></li>
-                    </div>
+                <div class="seletores">
 
-                  <button class="btn" type="submit" id="btn"> Submit </button>
-                </div>     
+                  <div class="option">
+                      <input class="circle" type="radio" id="opt1" value="1"><label for="1">1</label>
+                  </div>
+
+                  <div class="option">
+                    <input class="circle" type="radio" id="opt2" value="2"><label for="2">2</label>
+                  </div>
+
+                  <div class="option">
+                    <input class="circle" type="radio" id="opt3" value="3"><label for="3">3</label>
+                  </div>
+                  
+                  <div class="option">
+                    <input class="circle" type="radio" id="opt4" value="4"><label for="4">4</label>
+                  </div>
+
+                  <div class="option">
+                    <input class="circle" type="radio" id="opt5"
+                    value="5"
+                    ><label for="5">5</label>
+                  </div>
+                  
+                
+                </div>
+
+           
+            <button class="btn" type="submit" id="btn"> Submit </button> 
+          
+
           <!-- Rating state end -->
 
   <!-- Thank you state start -->
             <div class="thankYou">
-                <!--display set on none. After selected some number display is then set on block while the other on none-->
+                <!--display set on none. Depois de clicar na escolha, será mudado pra block while o outro set on none -->
               <img src="./images/illustration-thank-you.svg" alt="Thank you!">
 
               <div class="rating">You selected <span id="rating"> <!-- Add rating here --> </span>out of 5 </div>
@@ -57,10 +77,10 @@
 
       <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">Your Name Here</a>.
+        Coded by <a href="#">romeumaier</a>.
       </div>
 
 
-    </main>    
+   
 </body>
 </html>

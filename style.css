@@ -43,8 +43,7 @@
     
     .evaluation{
 
-      margin: 2em 1.5em;
-      
+      margin: 2em 1.5em;      
       display: block;
 
       }
@@ -66,14 +65,17 @@
     .paragraph{
       color:var(--LightGrey);
       line-height: 1.7em;
+      font-weight: 500;
+      text-align: left;
 
     }
 
     .seletores {
       width: 90%;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       margin: 0 auto;
+      
         
 
     }
@@ -110,6 +112,5 @@
     } 
     .attribution {
       justify-content: flex-end;
-
     
   }
